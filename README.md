@@ -1,3 +1,21 @@
+# Hyper-GCN-Demo
+
+This project was developed as part of the **CSE4610 Design Project** at the **Islamic University of Technology (IUT)** and is based on and extends the official implementation of **Hyper-GCN**, presented in the paper *"Adaptive Hyper-Graph Convolution Network for Skeleton-based Human Action Recognition with Virtual Connections."*
+
+**Original Repository:** [Hyper-GCN](https://github.com/6UOOON9/Hyper-GCN)
+
+**Original Paper:** [Adaptive Hyper-Graph Convolution Network for Skeleton-based Human Action Recognition with Virtual Connections](https://arxiv.org/pdf/2411.14796)
+
+The original Hyper-GCN implementation serves as the starting point for this project. The code has been modified and extended to utilize the model's pretrained weights and provide a **demo-oriented implementation** of the proposed approach for human action recognition.
+
+## Team Members
+
+- **Juhan Ahmed Jarif**, 220041214
+- **Aakash Abdullah Siddhartha**, 220041221
+- **Tanvir Mahmud Hossain**, 220041253
+
+---
+
 # Hyper-GCN
 This repo is the official implementation for [Adaptive Hyper-Graph Convolution Network for Skeleton-based Human Action Recognition with Virtual Connections](https://arxiv.org/pdf/2411.14796). The paper is accepted to ICCV 2025.
 
