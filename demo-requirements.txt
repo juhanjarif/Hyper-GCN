@@ -1,0 +1,12 @@
+torch
+torchvision
+gradio>=3.40.0
+numpy<2
+matplotlib
+pyyaml
+tqdm
+pillow
+mediapipe==0.10.21
+opencv-contrib-python==4.11.0.86
+imageio
+imageio-ffmpeg

@@ -1,0 +1,92 @@
+# Python cache / compiled files
+
+**pycache**/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+
+venv/
+env/
+.venv/
+hypergcn_venv/
+hypergcn_env/
+
+# Python packaging
+
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Jupyter
+
+.ipynb_checkpoints/
+
+# IDE
+
+.vscode/
+.idea/
+
+# OS files
+
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+
+*.log
+
+# Temporary files
+
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Generated demo files
+
+*.gif
+*.mp4
+*.avi
+*.mov
+
+# Generated output directories
+
+outputs/
+output/
+runs/
+results/
+
+# Model weights
+
+weights/
+*.pt
+*.pth
+*.ckpt
+
+weights_large/
+*.pt
+*.pth
+*.ckpt
+
+# Testing / coverage
+
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environment variables
+
+.env
+.env.*
+!.env.example
+
+# Videos
+videos/
+*.mov
+*.mp4
