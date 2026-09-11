@@ -105,71 +105,20 @@ def clear_webcam_buffer():
     return last_webcam_prediction
 
 custom_css = """
-.gradio-container {
-    background: #071A33 !important;
-    color: #D9F1FF !important;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-h1, h2, h3 {
-    color: #7DD3FC !important;
-}
-
-.gradio-container p,
-.gradio-container label,
-.gradio-container span {
-    color: #D9F1FF;
-}
-
-button[role="tab"] {
-    color: #A7DFFF !important;
-    background: #0B2545 !important;
-    border-color: #1E5A8A !important;
-}
-
-button[role="tab"][aria-selected="true"] {
-    background: #1677B8 !important;
-    color: white !important;
-    border-color: #38BDF8 !important;
-}
-
-.gr-button {
-    background: #168ACB !important;
-    color: white !important;
-    border: 1px solid #38BDF8 !important;
-    border-radius: 10px !important;
-    font-weight: 600 !important;
-}
-
-.gr-button:hover {
-    background: #38BDF8 !important;
-    color: #071A33 !important;
-}
-
-.gr-button.primary {
-    background: #38BDF8 !important;
-    color: #071A33 !important;
-}
-
-.gr-box {
-    background: #0B2545 !important;
-    border-color: #1E5A8A !important;
-}
-
-.prose {
-    color: #D9F1FF !important;
-}
-
-.prose strong {
-    color: #7DD3FC !important;
-}
-
-.prose code {
-    background: #12395F !important;
-    color: #7DD3FC !important;
+*, *::before, *::after {
+    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
 }
 """
 
-with gr.Blocks(title="Hyper-GCN Action Recognition", css=custom_css) as demo:
+custom_theme = gr.themes.Soft(
+    primary_hue="indigo",
+    secondary_hue="slate",
+    font=[gr.themes.GoogleFont("Inter"), "ui-sans-serif", "system-ui", "sans-serif"],
+)
+
+with gr.Blocks(title="Hyper-GCN Action Recognition", theme=custom_theme, css=custom_css) as demo:
     gr.Markdown("# Hyper-GCN Action Recognition Demo")
 
     with gr.Tabs():
