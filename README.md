@@ -6,13 +6,52 @@ This project was developed as part of the **CSE4610 Design Project** at the **Is
 
 **Original Paper:** [Adaptive Hyper-Graph Convolution Network for Skeleton-based Human Action Recognition with Virtual Connections](https://arxiv.org/pdf/2411.14796)
 
+## About Hyper-GCN-Demo
 The original Hyper-GCN implementation serves as the starting point for this project. The code has been modified and extended to utilize the model's pretrained weights and provide a **demo-oriented implementation** of the proposed approach for human action recognition.
+
+This is a simple, interactive Gradio web application that generates a prediction from the live video feed using the webcam or videos directly uploaded in real-time after passing it through the pretrained model to demonstrate the architecture without needing to download the large NTU RGB+D datasets.
+
+## How to run the project
+1. **Clone the Repository:**
+```bash
+https://github.com/juhanjarif/Hyper-GCN.git
+```
+```bash
+git@github.com:juhanjarif/Hyper-GCN.git
+```
+
+2. **Creating Virtual Environment:**
+   Make sure you have your virtual environment active. If you're running for the first time, then create virtual environment with $python$ version 3.12 using the following command, and then activate it.
+```bash
+python3.12 -m venv hypergcn_venv
+```
+
+3. **Install dependencies:**
+   Install the demo-specific dependencies:
+```bash
+pip install -r demo-requirements.txt
+```
+
+4. __Download Weights:__
+   Ensure you have downloaded the base model weights for NTU60 from the original Google Drive Link above or this demo specific [Google Drive](https://drive.google.com/drive/folders/1ui0QchgXBdtkrhcBmSFe-vKBaMVeI4x_?usp=drive_link) and placed the `.pt` file in:
+   `weights\bone_motion_xsub_ntu60.pt`, `weights\bone_motion_xview_ntu60.pt`, `weights\bone_xsub_ntu60.pt`, `weights\bone_xview_ntu60.pt`, `weights\joint_motion_xsub_ntu60.pt`, `weights\joint_motion_xview_ntu60.pt`, `weights\joint_xsub_ntu60.pt`, `weights\joint_xview_ntu60.pt`. 
+   
+   For large model weights, use the above Google Drive Link and placed the `.pt` file in:
+   `weights_large\large_bone_motion_xsub_ntu60.pt`, `weights_large\large_bone_motion_xview_ntu60.pt`, `weights_large\large_bone_xsub_ntu60.pt`, `weights_large\large_bone_xview_ntu60.pt`, `weights_large\large_joint_motion_xsub_ntu60.pt`, `weights_large\large_joint_motion_xview_ntu60.pt`, `weights_large\large_joint_xsub_ntu60.pt`, `weights_large\large_joint_xview_ntu60.pt`.
+   
+5. **Start the App:**
+```bash
+python app.py
+```
+
+6. **Download Demo Specific Videos:**
+   Download the videos from the Google Drive Link above and can place it under `videos\` folder.
 
 ## Team Members
 
-- **Juhan Ahmed Jarif**, 220041214
-- **Aakash Abdullah Siddhartha**, 220041221
-- **Tanvir Mahmud Hossain**, 220041253
+- **[Juhan Ahmed Jarif](https://github.com/juhanjarif)**, 220041214
+- **[Aakash Abdullah Siddhartha](https://github.com/Arceus-221)**, 220041221
+- **[Tanvir Mahmud Hossain](https://github.com/tamajose)**, 220041253
 
 ---
 
