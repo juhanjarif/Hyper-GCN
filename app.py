@@ -105,19 +105,34 @@ def clear_webcam_buffer():
     return last_webcam_prediction
 
 custom_css = """
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap');
 
-*, *::before, *::after {
-    font-family: 'Inter', ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif !important;
-}
+    body,
+    .gradio-container,
+    .gradio-container * {
+        font-family: 'Montserrat', sans-serif !important;
+        font-weight: 600 !important;
+    }
+
+    h1, h2, h3, h4, h5, h6, .markdown-text h1, .markdown-text h2, .markdown-text h3 {
+        font-weight: 700 !important;
+    }
+
+    button,
+    input,
+    textarea,
+    select,
+    label,
+    .tabs button {
+        font-weight: 700 !important;
+    }
 """
 
 custom_theme = gr.themes.Soft(
     primary_hue="indigo",
     secondary_hue="slate",
-    font=[gr.themes.GoogleFont("Inter"), "ui-sans-serif", "system-ui", "sans-serif"],
+    font=gr.themes.GoogleFont("Montserrat"),
 )
-
 with gr.Blocks(title="Hyper-GCN Action Recognition", theme=custom_theme, css=custom_css) as demo:
     gr.Markdown("# Hyper-GCN Action Recognition Demo")
 
